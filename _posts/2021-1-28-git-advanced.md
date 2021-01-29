@@ -29,7 +29,7 @@ This second image shows what happens after we use git rebase. You'll want to mak
 
 #### When shouldn't you use git rebase?
 
-From the research I've done, there's a golden rule that says to never use it on public branches. This is because you're changing history and things can turn for the worst depending on when and where you rebase. Also, never rebase the master branch onto another branch. More issues will happen there. 
+From the research I've done, there's a golden rule that says to never use it on public branches. This is because you're changing history and things can turn for the worst depending on when and where you rebase. Also, never rebase the master branch onto another branch. More issues will happen there. And finally, if you are working with others on a remote repo, always use **git pull** before you rebase. If you don't and they've already made commits to the master branch, everything is going to diverge and be out of sync. You're going to lose work.  
 
 #### Git Rebase Example
 
