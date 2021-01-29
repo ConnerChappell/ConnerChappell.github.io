@@ -13,7 +13,7 @@ In this first image we have a project with an original (master) branch that has 
 
 ![_config.yml]({{site.baseurl}}/images/rebase/git-rebase-visual1.png)
 
-This second image shows what happens after we use git rebase. You'll want to make sure you checkout to your feature branch first. From their you rebase master. Those original commits on the feature branch have been moved onto the tip of the original (master) branch. The project history has been rewritten.
+This second image shows what happens after we use git rebase. You'll want to make sure you checkout to your feature branch first. From there you enter **git rebase master** in the command line. Those original commits on the feature branch have been moved onto the tip of the original (master) branch. The project history has been rewritten.
 
 ![_config.yml]({{site.baseurl}}/images/rebase/git-rebase-visual2.png)
 
