@@ -80,3 +80,11 @@ As you can see you now have a streamline git history with both branches successf
 
 
 #### Interactive Rebase Example
+
+For this interactive rebase example I went through the same commit steps as in the rebase example above. However, when it is time to rebase, instead of just typing to automated **git rebase master**, you type **git rebase -i master**.
+![_config.yml]({{site.baseurl}}/images/rebase/interactive-rebase1.png)
+
+
+
+Once the command is completed. A prompt will pop up listing all the commits that are about to be moved. It also lists different actions that can be taken for each of those commits (pick, reword, edit, squash, etc). Basically interactive rebasing allows you to alter commits as they are moved to the new branch. It offers more control over the branch's commit history. It's usually used to clean up a messy history before merging a feature branch into master.
+![_config.yml]({{site.baseurl}}/images/rebase/interactive-rebase2.png)
