@@ -39,32 +39,40 @@ You'll initlize your repository and make an initial commit. This will be on the 
 ![_config.yml]({{site.baseurl}}/images/rebase/rebase1.png)
 
 
+
 Now the initial commit has been made (could be more than one commit in a real project) and you want to add a feature. To work on this feature separately, a branch called feature1 was created. However, because only checkout was used, we are still located on the master branch. You can see what branch you're on including all of the branches in the repo by typing **git branch**. 
 ![_config.yml]({{site.baseurl}}/images/rebase/rebase2.png)
+
 
 
 Now let's say just for example purposes, while you're working on the feature1 branch, a couple of team members have been updating the code on the main branch and making commits. In the screenshot below you can see that 2 commits have been made on the master branch: some starter code was added and an h1 was also added to the body. 
 ![_config.yml]({{site.baseurl}}/images/rebase/rebase3.png)
 
 
+
 For you to work on the feature1 branch you must jump over to it by typing **git checkout feature1**. As you can see, no code has been added since this branch was created based off the initial commit earlier. 
 ![_config.yml]({{site.baseurl}}/images/rebase/rebase4.png)
+
 
 
 Now you make 2 commits to this branch by adding an index.js file and then some code to that file. 
 ![_config.yml]({{site.baseurl}}/images/rebase/rebase5.png)
 
 
+
 After adding those commits to the feature1 branch it's time to rebase and merge everything back together. Just like in the screenshot I would type **git branch** just to make sure you are on the right. In this case and in most cases to make things easier, you want to be on the feature branch before you rebase. Then you type **git rebase master**.
 ![_config.yml]({{site.baseurl}}/images/rebase/rebase6.png)
+
 
 
 After rebasing, you are still in the feature1 branch. But now the index.html file has been added with all the commits from the master branch earlier. 
 ![_config.yml]({{site.baseurl}}/images/rebase/rebase7.png)
 
 
+
 Even though we've rebased and all the commits are together on the feature1 branch, we want to perform a fast-forward merge and bring the master branch back up to where it should be. You do this by typing **git checkout master** to jump back to the master branch. From here you will merge the feature1 branch by typing **git merge feature1**. And voila, the master branch now containes all the code and commits from the feature1 branch.
 ![_config.yml]({{site.baseurl}}/images/rebase/rebase8.png)
+
 
 
 As you can see you now have a streamline git history with both branches successfully merged together using rebase.
