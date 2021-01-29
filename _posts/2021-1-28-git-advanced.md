@@ -28,3 +28,8 @@ This second image shows what happens after we use git rebase. You'll want to mak
 - You can lose the context provided by a merge
 
 #### When shouldn't you use git rebase?
+
+From the research I've done, there's a golden rule that says to never use it on public branches. This is because you're changing history and things can turn for the worst depending on when and where you rebase. Also, never rebase the master branch onto another branch. More issues will happen there. 
+
+#### Git Rebase Example
+
