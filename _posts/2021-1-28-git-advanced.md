@@ -111,11 +111,11 @@ Git Reset is one of the ways to undo changes. Basically it takes the current bra
 
 Typing **git reset 25dd2f6** moves both the HEAD and branch refs to the specified commit.
 
-![_config.yml]({{site.baseurl}}/images/reset/git-reset.png)
+![_config.yml]({{site.baseurl}}/images/git-reset/git-reset.png)
 
 There are 3 different types of Git Reset: **--hard**, **--mixed**, and **--soft**. **--hard** resets the working directory, staging area, and commit history. This means that anything that is not comitted will be lost. **--mixed** is the default method if you just use **git reset**. **--mixed** affects the staging area, and the commit history. **--soft** only affects the commit history. See the image below from Atlassian to help visualize this.
 
-![_config.yml]({{site.baseurl}}/images/reset/git-reset-stages.png)
+![_config.yml]({{site.baseurl}}/images/git-reset/git-reset-stages.png)
 
 #### Git Reset Example
 
@@ -129,7 +129,7 @@ Git Checkout is another way to undo changes but not necssarilly the best. A "che
 
 Typing **git checkout 25dd2f6** moves just the HEAD ref and we are now in what's called a deatched head state. 
 
-![_config.yml]({{site.baseurl}}/images/checkout/git-checkout.png)
+![_config.yml]({{site.baseurl}}/images/git-checkout/git-checkout.png)
 
 #### Git Checkout Example
 
@@ -143,6 +143,6 @@ Git Revert is used for undoing changes to a repository's commit history. Like re
 
 Typing **git revert 25dd2f6** creates the new reverted commit at the tip of the branch as you can see below.
 
-![_config.yml]({{site.baseurl}}/images/revert/git-revert.png)
+![_config.yml]({{site.baseurl}}/images/git-revert/git-revert.png)
 
 #### Git Revert Example
