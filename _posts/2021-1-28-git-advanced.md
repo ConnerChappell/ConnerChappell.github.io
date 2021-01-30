@@ -133,13 +133,25 @@ Git Checkout is another way to undo changes but not necssarilly the best. A "che
 
 ![_config.yml]({{site.baseurl}}/images/reset-checkout-branch.png)
 
-Typing **git checkout 25dd2f6** moves just the HEAD ref and we are now in what's called a deatched head state. You do not want to commit when you are in a detached head state.
+Typing **git checkout 25dd2f6** moves just the HEAD ref and we are now in what's called a deatched head state. You do not want to commit when you are in a detached HEAD state.
 
 ![_config.yml]({{site.baseurl}}/images/git-checkout/git-checkout.png)
 
-#### Git Checkout Example
+#### Git Checkout Commit Example
 
+Again I've made some commits to a master branch in this other repo.
 
+![_config.yml]({{site.baseurl}}/images/git-checkout/checkout-example1.png)
+
+Now I'm going to checkout commit 3. To do this I typed **git checkout 44da408** and now it lets me know I'm in a detached HEAD state and checking out commit 3.
+
+![_config.yml]({{site.baseurl}}/images/git-checkout/checkout-example2.png)
+
+#### Git Checkout File Example
+
+On a new branch I've added an index.js file and made a couple of commits. Note: if you make commits and go to checkout a file nothing really happens. After a couple of commits, I make another change and decide to now checkout the file by typing **git checkout index.js**.
+
+![_config.yml]({{site.baseurl}}/images/git-checkout/checkout-example3.png)
 
 #### What is Git Revert?
 
