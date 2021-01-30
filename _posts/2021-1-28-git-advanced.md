@@ -113,7 +113,7 @@ Typing **git reset 25dd2f6** moves both the HEAD and branch refs to the specifie
 
 ![_config.yml]({{site.baseurl}}/images/git-reset/git-reset.png)
 
-There are 3 different types of Git Reset: **--hard**, **--mixed**, and **--soft**. **--hard** resets the working directory, staging area, and commit history. This means that anything that is not comitted will be lost. **--mixed** is the default method if you just use **git reset**. **--mixed** affects the staging area, and the commit history. **--soft** only affects the commit history. See the image below from Atlassian to help visualize this.
+There are 3 different types of Git Reset: **- -hard**, **- -mixed**, and **- -soft**. **- -hard** resets the working directory, staging area, and commit history. This means that anything that is not comitted will be lost. **- -mixed** is the default method if you just use **git reset**. **- -mixed** affects the staging area, and the commit history. **- -soft** only affects the commit history. See the image below from Atlassian to help visualize this.
 
 ![_config.yml]({{site.baseurl}}/images/git-reset/git-reset-stages.png)
 
