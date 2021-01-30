@@ -125,6 +125,8 @@ Below you can see all the commits I've made to a master branch.
 
 To reset to a previous commit I can use the first 7 characters of the commit hash (long set of characters). By typing **git reset - -soft 26e42c3**. Now you can see the HEAD is at the specified commit.
 
+![_config.yml]({{site.baseurl}}/images/git-reset/reset-example2.png)
+
 #### What is Git Checkout?
 
 Git Checkout is another way to undo changes but not necssarilly the best. A "checkout" is basically the act of switching between versions of a target. There are 3 distinct targets which you can checkout: files, commits, and branches (which we've done above in the rebase examples). To help visualize this we will again use the master branch that was used above in Git Reset.
