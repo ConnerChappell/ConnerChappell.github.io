@@ -164,3 +164,19 @@ Typing **git revert 25dd2f6** creates the new reverted commit at the tip of the 
 ![_config.yml]({{site.baseurl}}/images/git-revert/git-revert.png)
 
 #### Git Revert Example
+
+For this example I've made some commits by adding 4 html files.
+
+![_config.yml]({{site.baseurl}}/images/git-revert/revert-example1.png)
+
+I realized I don't need the third html file which was my third commit. By typing **git revert 2b5a6dc** I revert that commit and the third html file is removed.
+
+![_config.yml]({{site.baseurl}}/images/git-revert/revert-example2.png)
+
+With revert I am able to keep the fourth, second, and initial html commits and files however.
+
+![_config.yml]({{site.baseurl}}/images/git-revert/revert-example3.png)
+
+
+## Git Submodules
+
