@@ -127,7 +127,7 @@ Git Checkout is another way to undo changes but not necssarilly the best. A "che
 
 ![_config.yml]({{site.baseurl}}/images/reset-checkout-branch.png)
 
-Typing **git checkout 25dd2f6** moves just the HEAD ref and we are now in what's called a deatched head state. 
+Typing **git checkout 25dd2f6** moves just the HEAD ref and we are now in what's called a deatched head state. You do not want to commit when you are in a detached head state.
 
 ![_config.yml]({{site.baseurl}}/images/git-checkout/git-checkout.png)
 
