@@ -180,3 +180,4 @@ With revert I am able to keep the fourth, second, and initial html commits and f
 
 ## Git Submodules
 
+A git submodule is basiscally a reppository inside of a repository. They have their own history and commits. According to Atlassian, it looks like you'd want to use this if you are "delegating a piece of the project to a third party and want to integrate their work at a specific time or release." A disadvantage of submodules is that it will probably make branching, cloning, merging and forking difficult. 
