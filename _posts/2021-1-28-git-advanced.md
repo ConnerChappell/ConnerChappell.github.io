@@ -99,3 +99,50 @@ For this interactive rebase example I went through the same commit steps as in t
 Once the command is completed. A prompt will pop up listing all the commits that are about to be moved. It also lists different actions that can be taken for each of those commits (pick, reword, edit, squash, etc). Basically interactive rebasing allows you to alter commits as they are moved to the new branch. It offers more control over the branch's commit history. It's usually used to clean up a messy history before merging a feature branch into master.
 
 ![_config.yml]({{site.baseurl}}/images/rebase/interactive-rebase2.png)
+
+
+## Git Reset, Checkout, and Revert
+
+#### What is Git Reset?
+
+Git Reset is one of the ways to undo changes. Basically it takes the current branch and resets it to a point (commit) somewhere else. Also, unlike git checkout, git reset moves the HEAD ref pointer AND the current branch ref pointer. In the example below we have a master branch with some commits on it. 
+
+![_config.yml]({{site.baseurl}}/images/reset-checkout-branch.png)
+
+Typing **git reset 25dd2f6** moves both the HEAD and branch refs to the specified commit.
+
+![_config.yml]({{site.baseurl}}/images/reset/git-reset.png)
+
+There are 3 different types of Git Reset: **--hard**, **--mixed**, and **--soft**. **--hard** resets the working directory, staging area, and commit history. This means that anything that is not comitted will be lost. **--mixed** is the default method if you just use **git reset**. **--mixed** affects the staging area, and the commit history. **--soft** only affects the commit history. See the image below from Atlassian to help visualize this.
+
+![_config.yml]({{site.baseurl}}/images/reset/git-reset-stages.png)
+
+#### Git Reset Example
+
+
+
+#### What is Git Checkout?
+
+Git Checkout is another way to undo changes but not necssarilly the best. A "checkout" is basically the act of switching between versions of a target. There are 3 distinct targets which you can checkout: files, commits, and branches. To help visualize this we will again use the master branch that was used above in Git Reset.
+
+![_config.yml]({{site.baseurl}}/images/reset-checkout-branch.png)
+
+Typing **git checkout 25dd2f6** moves just the HEAD ref and we are now in what's called a deatched head state. 
+
+![_config.yml]({{site.baseurl}}/images/checkout/git-checkout.png)
+
+#### Git Checkout Example
+
+
+
+#### What is Git Revert?
+
+Git Revert is used for undoing changes to a repository's commit history. Like reset and checkout, revert takes a specified commit but does not move ref pointers like the other two. Revert will inverse the changes from that specified commit and create a new revert commit at the tip of the branch. See the images below for a visual representation. Again starting with the same master branch.
+
+![_config.yml]({{site.baseurl}}/images/reset-checkout-branch.png)
+
+Typing **git revert 25dd2f6** creates the new reverted commit at the tip of the branch as you can see below.
+
+![_config.yml]({{site.baseurl}}/images/revert/git-revert.png)
+
+#### Git Revert Example
