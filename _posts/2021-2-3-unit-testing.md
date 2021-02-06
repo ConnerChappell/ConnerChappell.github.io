@@ -3,8 +3,6 @@ layout: post
 title: Unit Testing
 ---
 
-# Unit Testing
-
 ### What is Unit Testing?
 
 Unit Testing is basically testing individual parts or components or sections, units, of your code to make sure it works and that there are not bugs or defects. If done properly, this can save a lot of time and money.
